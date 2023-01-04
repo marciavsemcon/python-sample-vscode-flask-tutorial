@@ -1,5 +1,9 @@
 [flake8]
-extend-ignore = F401
+extend-ignore =
+    # Module imported but unused
+    F401,
+    # line too long (80 > 79 characters)
+    E501
 exclude =
     .git,
     __pycache__,
